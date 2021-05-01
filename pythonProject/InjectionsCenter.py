@@ -18,6 +18,15 @@ class InjectionsCenter:
         self.cur.execute(query)
         self.con.commit()
 
+    def getdata(self):
+        query= "SELECT injectionscenter.*, centers.mobile, centers.address FROM injectionscenter INNER JOIN centers ON injectionscenter.center = centers.center"
+        self.cur.execute(query)
+        
+        data = list()
+        for row in self.cur:
+            data.append(row)
 
-ic = InjectionsCenter()
-ic.update_center("Datta Medical", "Remdesivir", "1100")
+        return data
+
+# ic = InjectionsCenter()
+# ic.update_center("Datta Medical", "Remdesivir", "1100")

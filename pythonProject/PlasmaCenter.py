@@ -18,6 +18,15 @@ class PlasmaCenter:
         self.cur.execute(query)
         self.con.commit()
 
+    def getdata(self):
+        query= "SELECT plasmacenter.*, centers.mobile, centers.address FROM plasmacenter INNER JOIN centers ON plasmacenter.center = centers.center"
+        self.cur.execute(query)
+        
+        data = list()
+        for row in self.cur:
+            data.append(row)
+
+        return data
 
 # pc = PlasmaCenter()
 # pc.update_tests("Morya Blood bank", "A, B, O, AB, -A")

@@ -18,5 +18,15 @@ class OxygenBed:
         self.cur.execute(query)
         self.con.commit()
 
+    def getdata(self):
+        query= "SELECT oxygenbed.*, centers.mobile, centers.address FROM oxygenbed INNER JOIN centers ON oxygenbed.center = centers.center"
+        self.cur.execute(query)
+        
+        data = list()
+        for row in self.cur:
+            data.append(row)
+
+        return data
+
 # ox = OxygenBed()
 # ox.insert_beds("Kasturba Specility Hospital", 10, 3, 13)

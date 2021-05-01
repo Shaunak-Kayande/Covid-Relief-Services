@@ -18,5 +18,14 @@ class TestingLabs:
         self.cur.execute(query)
         self.con.commit()
 
+    def getdata(self):
+        query= "SELECT testinglabs.*, centers.mobile, centers.address FROM testinglabs INNER JOIN centers ON testinglabs.center = centers.center"
+        self.cur.execute(query)
+        
+        data = list()
+        for row in self.cur:
+            data.append(row)
+
+        return data
 # tl = TestingLabs()
 # tl.insert_tests("Dr. Lal PathLabs", "RTPCR, Rapid Antigen")

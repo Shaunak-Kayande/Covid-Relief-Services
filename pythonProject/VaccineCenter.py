@@ -18,6 +18,16 @@ class VaccineCenter:
         self.cur.execute(query)
         self.con.commit()
 
+    def getdata(self):
+        query= "SELECT vaccinecenter.*, centers.mobile, centers.address FROM vaccinecenter INNER JOIN centers ON vaccinecenter.center = centers.center"
+        self.cur.execute(query)
+        
+        data = list()
+        for row in self.cur:
+            data.append(row)
+
+        return data
+
 
 # vc = VaccineCenter()
 # vc.insert_center("Yerwada Late. Rajiv Gandhi Hospital", "Covishield", "600")

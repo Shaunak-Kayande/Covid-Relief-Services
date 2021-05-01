@@ -839,7 +839,7 @@ our volunteering programmes too.
 
 STAY HOME, STAY SAFE."""
 
-    l3 = Label(viewWindow, justify=LEFT, padx=10, text=intro1, bg='#bc0103')
+    l3 = Label(viewWindow, justify=LEFT, padx=10, text=intro1, bg='#bc0103',fg='white')
     l3.configure(font=("Arca Majora", 15))
     l3.place(x=50, y=150)
 
@@ -850,13 +850,116 @@ STAY HOME, STAY SAFE."""
         Bedsdetails1.iconbitmap(r'logo.ico')
         Bedsdetails1['bg'] = 'white'
 
-        image1 = Image.open("beddetails.jpeg")
-        image1_resize = image1.resize((1400, 400))
-        test = ImageTk.PhotoImage(image1_resize)
-        label1 = Label(Bedsdetails1, image=test)
-        label1.image = test
-        label1.config(bd=0)
-        label1.pack()
+        ccc = Label(Bedsdetails1, text="CENTRE DETAILS", bg='white')
+        ccc.configure(font=("Geo Sans Light", 20,'underline'))
+        ccc.pack()
+
+        cnum_lable = Label(Bedsdetails1, text="Centre 1: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15,'bold','underline'))
+        cnum_lable.place(x=10, y=50)
+
+        cname_lable = Label(Bedsdetails1, text="Centre Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=100)
+
+        cname1_lable = Label(Bedsdetails1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=100)
+
+        cno_lable = Label(Bedsdetails1, text="Centre Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=150)
+
+        cno1_lable = Label(Bedsdetails1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=150)
+
+        cadd_lable = Label(Bedsdetails1, text="Centre Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=200)
+
+        cadd1_lable = Label(Bedsdetails1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=200)
+
+        cnbeds_lable = Label(Bedsdetails1, text="Normal Beds:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=300)
+
+        cnbeds1_lable = Label(Bedsdetails1, text="Normal Beds", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=300)
+
+        cobeds_lable = Label(Bedsdetails1, text="Oxygen Beds:", bg='white')
+        cobeds_lable.configure(font=("Geo Sans Light", 15))
+        cobeds_lable.place(x=10, y=350)
+
+        cobeds1_lable = Label(Bedsdetails1, text="Oxygen Beds", bg='white')
+        cobeds1_lable.configure(font=("Geo Sans Light", 15))
+        cobeds1_lable.place(x=250, y=350)
+
+        ctbeds_lable = Label(Bedsdetails1, text="Total Beds:", bg='white',fg='red')
+        ctbeds_lable.configure(font=("Geo Sans Light", 15,'bold'))
+        ctbeds_lable.place(x=10, y=400)
+
+        ctbeds1_lable = Label(Bedsdetails1, text="Total Beds", bg='white', fg='red')
+        ctbeds1_lable.configure(font=("Geo Sans Light", 15, 'bold'))
+        ctbeds1_lable.place(x=250, y=400)
+
+        cnum_lable = Label(Bedsdetails1, text="Centre 2: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+        cnum_lable.place(x=10, y=500)
+
+        cname_lable = Label(Bedsdetails1, text="Centre Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=550)
+
+        cname1_lable = Label(Bedsdetails1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=550)
+
+        cno_lable = Label(Bedsdetails1, text="Centre Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=600)
+
+        cno1_lable = Label(Bedsdetails1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=600)
+
+        cadd_lable = Label(Bedsdetails1, text="Centre Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=650)
+
+        cadd1_lable = Label(Bedsdetails1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=650)
+
+        cnbeds_lable = Label(Bedsdetails1, text="Normal Beds:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=700)
+
+        cnbeds1_lable = Label(Bedsdetails1, text="Normal Beds", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=700)
+
+        cobeds_lable = Label(Bedsdetails1, text="Oxygen Beds:", bg='white')
+        cobeds_lable.configure(font=("Geo Sans Light", 15))
+        cobeds_lable.place(x=10, y=750)
+
+        cobeds1_lable = Label(Bedsdetails1, text="Oxygen Beds", bg='white')
+        cobeds1_lable.configure(font=("Geo Sans Light", 15))
+        cobeds1_lable.place(x=250, y=750)
+
+        ctbeds_lable = Label(Bedsdetails1, text="Total Beds:", bg='white', fg='red')
+        ctbeds_lable.configure(font=("Geo Sans Light", 15, 'bold'))
+        ctbeds_lable.place(x=10, y=800)
+
+        ctbeds1_lable = Label(Bedsdetails1, text="Total Beds", bg='white', fg='red')
+        ctbeds1_lable.configure(font=("Geo Sans Light", 15, 'bold'))
+        ctbeds1_lable.place(x=250, y=800)
+
+
+
 
     def opentestingLabs1():
         testingLabs1 = Toplevel(viewWindow)  # Toplevel object which will be treated as a new window
@@ -865,13 +968,91 @@ STAY HOME, STAY SAFE."""
         testingLabs1.iconbitmap(r'logo.ico')
         testingLabs1['bg'] = 'white'
 
-        image1 = Image.open("RTPCR-test-covid.jpg")
+        '''image1 = Image.open("RTPCR-test-covid.jpg")
         image1_resize = image1.resize((500, 750))
         test = ImageTk.PhotoImage(image1_resize)
         label1 = Label(testingLabs1, image=test)
         label1.image = test
         label1.config(bd=0)
-        label1.pack(side=LEFT)
+        label1.pack(side=LEFT)'''
+
+        ccc = Label(testingLabs1, text="TESTING LABS", bg='white')
+        ccc.configure(font=("Geo Sans Light", 20, 'underline'))
+        ccc.pack()
+
+        cnum_lable = Label(testingLabs1, text="Lab 1: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+        cnum_lable.place(x=10, y=50)
+
+        cname_lable = Label(testingLabs1, text="Lab Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=100)
+
+        cname1_lable = Label(testingLabs1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=100)
+
+        cno_lable = Label(testingLabs1, text="Lab Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=150)
+
+        cno1_lable = Label(testingLabs1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=150)
+
+        cadd_lable = Label(testingLabs1, text="Lab Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=200)
+
+        cadd1_lable = Label(testingLabs1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=200)
+
+        cnbeds_lable = Label(testingLabs1, text="Available Tests:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=300)
+
+        cnbeds1_lable = Label(testingLabs1, text="Tests", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=300)
+
+
+
+        cnum_lable = Label(testingLabs1, text="Lab 2: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+        cnum_lable.place(x=10, y=700)
+
+        cname_lable = Label(testingLabs1, text="Lab Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=700)
+
+        cname1_lable = Label(testingLabs1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=700)
+
+        cno_lable = Label(testingLabs1, text="Lab Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=750)
+
+        cno1_lable = Label(testingLabs1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=750)
+
+        cadd_lable = Label(testingLabs1, text="Lab Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=800)
+
+        cadd1_lable = Label(testingLabs1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=800)
+
+        cnbeds_lable = Label(testingLabs1, text="Available Tests:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=850)
+
+        cnbeds1_lable = Label(testingLabs1, text="Tests", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=850)
 
     def openPlasma1():
         Plasma1 = Toplevel(viewWindow)  # Toplevel object which will be treated as a new window
@@ -880,13 +1061,92 @@ STAY HOME, STAY SAFE."""
         Plasma1.iconbitmap(r'logo.ico')
         Plasma1['bg'] = 'white'
 
-        image1 = Image.open("plasma.jpg")
+        '''image1 = Image.open("plasma.jpg")
         image1_resize = image1.resize((900, 1000))
         test = ImageTk.PhotoImage(image1_resize)
         label1 = Label(Plasma1, image=test)
         label1.image = test
         label1.config(bd=0)
-        label1.pack(side=LEFT)
+        label1.pack(side=LEFT)'''
+
+        ccc = Label(Plasma1, text="PLASMA DETAILS", bg='white')
+        ccc.configure(font=("Geo Sans Light", 20, 'underline'))
+        ccc.pack()
+
+        cnum_lable = Label(Plasma1, text="Centre 1: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+        cnum_lable.place(x=10, y=50)
+
+        cname_lable = Label(Plasma1, text="Centre Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=100)
+
+        cname1_lable = Label(Plasma1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=100)
+
+        cno_lable = Label(Plasma1, text="Centre Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=150)
+
+        cno1_lable = Label(Plasma1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=150)
+
+        cadd_lable = Label(Plasma1, text="Centre Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=200)
+
+        cadd1_lable = Label(Plasma1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=200)
+
+        cnbeds_lable = Label(Plasma1, text="Available Blood Groups:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=300)
+
+        cnbeds1_lable = Label(Plasma1, text="blood Group", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=300)
+
+
+
+        cnum_lable = Label(Plasma1, text="Centre 2: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+        cnum_lable.place(x=10, y=500)
+
+        cname_lable = Label(Plasma1, text="Centre Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=550)
+
+        cname1_lable = Label(Plasma1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=550)
+
+        cno_lable = Label(Plasma1, text="Centre Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=600)
+
+        cno1_lable = Label(Plasma1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=600)
+
+        cadd_lable = Label(Plasma1, text="Centre Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=650)
+
+        cadd1_lable = Label(Plasma1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=650)
+
+        cnbeds_lable = Label(Plasma1, text="Available Blood Groups:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=700)
+
+        cnbeds1_lable = Label(Plasma1, text="Blood Groups", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=700)
+
 
     def openInjections1():
             Injections1 = Toplevel(viewWindow)  # Toplevel object which will be treated as a new window
@@ -895,30 +1155,150 @@ STAY HOME, STAY SAFE."""
             Injections1.iconbitmap(r'logo.ico')
             Injections1['bg'] = 'white'
 
-            image1 = Image.open("remdesivir.jpg")
+            '''image1 = Image.open("remdesivir.jpg")
             image1_resize = image1.resize((600, 400))
             test = ImageTk.PhotoImage(image1_resize)
             label1 = Label(Injections1, image=test)
             label1.image = test
             label1.config(bd=0)
-            label1.place(x=0, y=355)
+            label1.place(x=0, y=355)'''
+
+            ccc = Label(Injections1, text="INJECTION DETAILS", bg='white')
+            ccc.configure(font=("Geo Sans Light", 20, 'underline'))
+            ccc.pack()
+
+            cnum_lable = Label(Injections1, text="Centre 1: ", bg='white')
+            cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+            cnum_lable.place(x=10, y=50)
+
+            cname_lable = Label(Injections1, text="Centre Name:", bg='white')
+            cname_lable.configure(font=("Geo Sans Light", 15))
+            cname_lable.place(x=10, y=100)
+
+            cname1_lable = Label(Injections1, text=" Name", bg='white')
+            cname1_lable.configure(font=("Geo Sans Light", 15))
+            cname1_lable.place(x=250, y=100)
+
+            cno_lable = Label(Injections1, text="Centre Phone Number:", bg='white')
+            cno_lable.configure(font=("Geo Sans Light", 15))
+            cno_lable.place(x=10, y=150)
+
+            cno1_lable = Label(Injections1, text="Phone Number", bg='white')
+            cno1_lable.configure(font=("Geo Sans Light", 15))
+            cno1_lable.place(x=250, y=150)
+
+            cadd_lable = Label(Injections1, text="Centre Address:", bg='white')
+            cadd_lable.configure(font=("Geo Sans Light", 15))
+            cadd_lable.place(x=10, y=200)
+
+            cadd1_lable = Label(Injections1, text="Address", bg='white')
+            cadd1_lable.configure(font=("Geo Sans Light", 15))
+            cadd1_lable.place(x=250, y=200)
+
+            cnbeds_lable = Label(Injections1, text="Available Injections:", bg='white')
+            cnbeds_lable.configure(font=("Geo Sans Light", 15))
+            cnbeds_lable.place(x=10, y=300)
+
+            cnbeds1_lable = Label(Injections1, text="Normal Beds", bg='white')
+            cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+            cnbeds1_lable.place(x=250, y=300)
+
+            cobeds_lable = Label(Injections1, text="Oxygen Beds:", bg='white')
+            cobeds_lable.configure(font=("Geo Sans Light", 15))
+            cobeds_lable.place(x=10, y=350)
+
+            cobeds1_lable = Label(Injections1, text="Oxygen Beds", bg='white')
+            cobeds1_lable.configure(font=("Geo Sans Light", 15))
+            cobeds1_lable.place(x=250, y=350)
+
+            cnum_lable = Label(Injections1, text="Centre 2: ", bg='white')
+            cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+            cnum_lable.place(x=10, y=500)
+
+            cname_lable = Label(Injections1, text="Centre Name:", bg='white')
+            cname_lable.configure(font=("Geo Sans Light", 15))
+            cname_lable.place(x=10, y=550)
+
+            cname1_lable = Label(Injections1, text=" Name", bg='white')
+            cname1_lable.configure(font=("Geo Sans Light", 15))
+            cname1_lable.place(x=250, y=550)
+
+            cno_lable = Label(Injections1, text="Centre Phone Number:", bg='white')
+            cno_lable.configure(font=("Geo Sans Light", 15))
+            cno_lable.place(x=10, y=600)
+
+            cno1_lable = Label(Injections1, text="Phone Number", bg='white')
+            cno1_lable.configure(font=("Geo Sans Light", 15))
+            cno1_lable.place(x=250, y=600)
+
+            cadd_lable = Label(Injections1, text="Centre Address:", bg='white')
+            cadd_lable.configure(font=("Geo Sans Light", 15))
+            cadd_lable.place(x=10, y=650)
+
+            cadd1_lable = Label(Injections1, text="Address", bg='white')
+            cadd1_lable.configure(font=("Geo Sans Light", 15))
+            cadd1_lable.place(x=250, y=650)
+
+
 
     def openVaccine1():
         Vaccine1 = Toplevel(viewWindow)  # Toplevel object which will be treated as a new window
         Vaccine1.geometry("1300x1300")  # sets dimensions of new window
         Vaccine1.title("VACCINATION DETAILS")
         Vaccine1.iconbitmap(r'logo.ico')
-        Vaccine1['bg'] = '#179dda'
+        Vaccine1['bg'] = 'white'
 
-        image1 = Image.open("vaccine.jpg")
+        '''image1 = Image.open("vaccine.jpg")
         image1_resize = image1.resize((1400, 750))
         test = ImageTk.PhotoImage(image1_resize)
         label1 = Label(Vaccine1, image=test)
         label1.image = test
         label1.config(bd=0)
-        label1.pack(side=BOTTOM)
+        label1.pack(side=BOTTOM)'''
 
-    cc = Label(viewWindow, text="Which window do you want to access?",bg="#bc0103")
+        ccc = Label(Vaccine1, text="VACCINATION DETAILS", bg='white')
+        ccc.configure(font=("Geo Sans Light", 20, 'underline'))
+        ccc.pack()
+
+        cnum_lable = Label(Vaccine1, text="Centre 1: ", bg='white')
+        cnum_lable.configure(font=("Geo Sans Light", 15, 'bold', 'underline'))
+        cnum_lable.place(x=10, y=50)
+
+        cname_lable = Label(Vaccine1, text="Centre Name:", bg='white')
+        cname_lable.configure(font=("Geo Sans Light", 15))
+        cname_lable.place(x=10, y=100)
+
+        cname1_lable = Label(Vaccine1, text=" Name", bg='white')
+        cname1_lable.configure(font=("Geo Sans Light", 15))
+        cname1_lable.place(x=250, y=100)
+
+        cno_lable = Label(Vaccine1, text="Centre Phone Number:", bg='white')
+        cno_lable.configure(font=("Geo Sans Light", 15))
+        cno_lable.place(x=10, y=150)
+
+        cno1_lable = Label(Vaccine1, text="Phone Number", bg='white')
+        cno1_lable.configure(font=("Geo Sans Light", 15))
+        cno1_lable.place(x=250, y=150)
+
+        cadd_lable = Label(Vaccine1, text="Centre Address:", bg='white')
+        cadd_lable.configure(font=("Geo Sans Light", 15))
+        cadd_lable.place(x=10, y=200)
+
+        cadd1_lable = Label(Vaccine1, text="Address", bg='white')
+        cadd1_lable.configure(font=("Geo Sans Light", 15))
+        cadd1_lable.place(x=250, y=200)
+
+        cnbeds_lable = Label(Vaccine1, text="Available vaccines:", bg='white')
+        cnbeds_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds_lable.place(x=10, y=300)
+
+        cnbeds1_lable = Label(Vaccine1, text="vaccines", bg='white')
+        cnbeds1_lable.configure(font=("Geo Sans Light", 15))
+        cnbeds1_lable.place(x=250, y=300)
+
+
+
+    cc = Label(viewWindow, text="Which window do you want to access?",bg="#bc0103",fg='white')
     cc.configure(font=("Geo Sans Light", 20, 'bold'))
     cc.place(x=700, y=150)
 
@@ -941,8 +1321,6 @@ STAY HOME, STAY SAFE."""
     c66 = Button(viewWindow, text="Vaccine", height=3, width=25,
                  command=openVaccine1)  # a button widget which will open a new window on button click
     c66.place(x=850, y=620)
-
-
 
 
 viewbtn = Button(root, text="Viewers", height=3, width=25,bg='black',fg='white',
